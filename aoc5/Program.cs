@@ -22,10 +22,6 @@ namespace aoc5
             day4 day4 = new day4(inputFileService);
             day5 day5 = new day5(inputFileService);
             day6 day6 = new day6(inputFileService);
-            day7 day7 = new day7(inputFileService); //semi working.
-            //day8 day8 = new day8(inputFileService);
-
-            // day8.test();
 
             #region Profiling Functions
             var puzzles = new Dictionary<string, dynamic>()
@@ -54,9 +50,6 @@ namespace aoc5
                     day6.getProcessedBeforeSOP,
                     day6.getProcessedBeforeSOM}
                 },
-                {"Day 7 No Space Left On Device", new iAocFuncList(){
-                  day7.sizeBelow100k}
-                }
             };
 
             foreach (var puzzle in puzzles)
